@@ -6,8 +6,14 @@ body {
   font-family: 'Open sans';
 }
 
-h2 {
+@font-face {
+  font-family: starjedi;
+  src: url('STJEDISE.TTF');
   font-weight: bold;
+}
+
+h2 {
+  font-family: starjedi;
 }
 
 .container-fluid {
@@ -27,8 +33,7 @@ h2 {
 .content {
   margin-top: 10%;
   margin-bottom: 10%;
-  margin-right: 2em;
-  margin-bottom: 10%;
+  margin-right: 5%;
 }
 
 .info {
@@ -58,4 +63,28 @@ h2 {
   margin-top: -10.5%;
   margin-left: -50%;
   width: 150%;
+}
+
+@media screen
+  and (max-device-width: 840px) {
+    h5, p {
+      font-size: 30px;
+    }
+
+    h4 {
+      font-size: 45px;
+    }
+
+    h2 {
+      font-size: 60px;
+    }
+    .container-fluid {
+      margin-top: 20%;
+      width: 95%;
+      font-size: 40px;
+    }
+
+    .links .link a {
+      font-size: 50px;
+    }
 }
