@@ -12,6 +12,7 @@ h2 {
 
 .container-fluid {
   border-style: dotted;
+  border-width: 3px;
   border-radius: 10px;
   color: #646363;
   background-color: white;
@@ -39,7 +40,6 @@ h2 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-}
 
 .links .link {
   flex-grow: 1;
@@ -51,8 +51,9 @@ h2 {
 
 .picture {
   border-radius: 50%;
-  border-width: 2.7px;
+  border-width: 3px;
   border-style: dotted;
+  border-color: white;
   border-radius: 50%;
   margin-top: -10.5%;
   margin-left: -50%;
