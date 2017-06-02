@@ -88,6 +88,12 @@ h2 {
       margin-top: 35%;
       width: 95%;
       font-size: 40px;
+      border-width: 7.5px;
+    }
+
+    .picture {
+      border-width: 7.5px;
+      margin-top: 10%;
     }
 
     .links .link a {
