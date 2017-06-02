@@ -1,6 +1,6 @@
 body {
   background-repeat: repeat;
-  background-size: 100px 100px;
+  background-size: 100px;
   background-image: url("images/micro.jpg");
   text-align: center;
   font-family: 'Open Sans', sans-serif;
@@ -67,6 +67,12 @@ h2 {
 
 @media screen
   and (max-device-width: 840px) {
+
+    body {
+      background-repeat: repeat;
+      background-size: 150px;
+    }
+
     h5, p {
       font-size: 30px;
     }
