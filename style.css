@@ -1,8 +1,3 @@
-html {
-  font-size: 150%;
-}
-
-
 body {
   background-repeat: repeat;
   background-size: 100px 100px;
@@ -20,36 +15,43 @@ h2 {
   border-radius: 10px;
   color: #646363;
   background-color: white;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   display: flex;
   flex-direction: column;
   align-content: center;
   width: 50%;
-  height: 80%;
 }
 
 .content {
-  display: block;
-  margin-top: 20%;
+  margin-top: 10%;
   margin-bottom: 10%;
-  height: 100%;
   margin-right: 2em;
+  margin-bottom: 10%;
 }
 
 .info {
-  margin-top: -5%;
+  margin-top: -2.5%;
 }
 
 .links {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 }
 
 .links .link {
   flex-grow: 1;
 }
 
-.fotis {
+.links .link a {
+  font-size: 28px;
+}
+
+.picture {
+  border-radius: 50%;
+  border-width: 2.7px;
   border-style: dotted;
   border-radius: 50%;
   margin-top: -10.5%;
