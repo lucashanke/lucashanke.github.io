@@ -4,6 +4,7 @@ body {
   background-image: url("images/micro.jpg");
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
 }
 
 @font-face {
@@ -12,35 +13,68 @@ body {
   font-weight: bold;
 }
 
-h2 {
-  font-family: starjedi;
+.card-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container-fluid {
+.card {
   border-style: dotted;
   border-width: 3px;
   border-radius: 10px;
   color: #646363;
   background-color: white;
-  margin-top: 10%;
-  margin-bottom: 10%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
   align-content: center;
-  width: 50%;
+  width: max-content;
+  padding: 48px;
 }
 
-.content {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  margin-right: 5%;
+.picture {
+  border-radius: 50%;
+  border-width: 3px;
+  border-style: dotted;
+  border-color: white;
+  border-radius: 50%;
+  width: 300px;
+  margin-left: -150px;
+  margin-right: 32px;
+}
+
+h2 {
+  font-family: starjedi;
+  font-size: 2em;
+  margin-bottom: 16px;
+}
+
+h4 {
+  font-size: 1em;
+  margin-bottom: 48px;
+}
+
+h5 {
+  font-size: 0.8em;
+}
+
+.houseofdota {
+  font-size: 0.6em;
+  font-style: italic;
 }
 
 .info {
-  margin-top: -2.5%;
+  min-width: 200px;
+}
+
+.email {
+  margin-top: 40px;
+  font-size: 0.8em;
 }
 
 .links {
+  margin-top: 48px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -51,53 +85,44 @@ h2 {
 }
 
 .links .link a {
-  font-size: 28px;
+  font-size: 1.2em;
 }
 
-.picture {
-  border-radius: 50%;
-  border-width: 3px;
-  border-style: dotted;
-  border-color: white;
-  border-radius: 50%;
-  margin-top: -10.5%;
-  margin-left: -50%;
-  width: 150%;
+@media (max-width:840px) {
+    .card {
+      flex-direction: column;
+      padding: 32px;
+    }
+
+    .picture {
+      margin: 0;
+      margin-top: -150px;
+      margin-bottom: 16px;
+    }
 }
 
 @media screen
   and (max-device-width: 840px) {
-
     body {
-      background-repeat: repeat;
-      background-size: 150px;
+      background-size: 180px;
+      font-size: 48px;
     }
 
-    h5, p {
-      font-size: 30px;
-    }
-
-    h4 {
-      font-size: 45px;
-    }
-
-    h2 {
-      font-size: 60px;
-    }
-    
-    .container-fluid {
-      margin-top: 35%;
-      width: 95%;
-      font-size: 40px;
+    .card {
+      flex-direction: column;
       border-width: 7.5px;
+      width: 88%;
+      padding: 32px;
     }
 
     .picture {
+      width: 600px;
       border-width: 7.5px;
-      margin-top: 10%;
+      margin: 0;
+      margin-top: -250px;
     }
 
-    .links .link a {
-      font-size: 50px;
+    .info {
+      margin: 32px;
     }
 }
